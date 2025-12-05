@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/png" href="images/faviconalcyoneo.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AlcyoNeo - Lanzamiento de Portfolio</title>
+  <meta name="description" content="Lanzamiento próximo del portfolio de AlcyoNeo, ilustradora digital. Suscríbete a la newsletter para recibir noticias.">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AlcyoNeo - Lanzamiento de Portfolio">
+  <meta property="og:description" content="Portfolio de AlcyoNeo — Ilustración y servicios creativos.">
+  <meta property="og:image" content="images/logoalcyoneo.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AlcyoNeo - Lanzamiento de Portfolio">
+  <meta name="twitter:description" content="AlcyoNeo - Lanzamiento de Portfolio.">
+  <meta name="twitter:image" content="images/logoalcyoneo.svg">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/logoalcyoneo.svg" alt="Logotipo de la ilustradora AlcyoNeo" width="190" height="190">
+</header>
+	
+ <main role="main" class="container">
+    <h1>Próximamente...</h1>
+    <h2 class="subheading">Pronto se lanzará el portfolio de <strong>AlcyoNeo</strong>, ilustradora digital.</h2>
+
+    <p class="lead">¡Sólo sus mejores trabajos! :) </p>
+
+
+	  
+	  <section aria-labelledby="subscribe-heading" class="card">
+      <h3 id="subscribe-heading">Newsletter</h3>
+
+      <form id="signup-form" aria-describedby="subscribe-desc">
+        <p id="subscribe-desc" class="sr-only">Simulacro de formulario para una newsletter. Por favor no envíes tu correo, este sitio web es sólo un proyecto de clase.</p>
+
+        <label for="email" class="visually-hidden">Dirección de correo eléctronico</label>
+        <input id="email" name="email" type="email" placeholder="micorreo@dominio.com" required aria-required="true">
+        <button type="submit">¡Enviar!</button>
+      </form>
+
+      <p id="form-message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="card countdown" aria-labelledby="launch-heading">
+      <h3 id="launch-heading">Cuenta atrás :D</h3>
+      <div id="countdown" aria-live="polite">—</div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> AlcyoNeo</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

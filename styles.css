@@ -1,0 +1,139 @@
+/* Basic responsive styles and accessible utilities */
+* {
+	box-sizing:border-box;
+}
+
+body{
+  margin: 0; 
+  font-family:'Dosis';
+  background: #699DB9;
+  color:  #533747;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+	margin: 32px 0;
+}
+
+.container{
+  width: min(880px,94%);
+  text-align:center;
+}
+
+h1{
+	font-size: clamp(1.8rem,3.5vw,2.6rem);
+	font-family: 'Coiny';
+	margin:.2rem 0;
+}
+
+.subheading{
+	color: #5f506B;
+	margin:.2rem 0 1rem;
+}
+
+h3{
+	color:white;
+}
+
+.lead{
+	color: darkslategray;
+	max-width:60ch;
+	margin:0 auto 1.2rem;
+}
+
+.card{
+	background:rgba(106, 107, 131, 0.75);
+    border: 4px double rgba(255,255,255,0.8);
+    padding: 1.1rem;
+	border-radius: 10px;
+	margin: 1rem auto;
+}
+
+.subscribe{
+	display:flex;
+	flex-direction:column;
+	align-items:center
+}
+
+#signup-form{
+	display:flex;
+	gap:.5rem;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+#email{
+	padding: .6rem .8rem;
+	border-radius: 8px;
+	border: 1px solid rgba(255,255,255,0.06);
+	background: rgba(255, 255, 255, 0.6);
+	color: white;
+	min-width: 220px;
+	font-family: 'Dosis';
+	font-size: bold;
+}
+
+button{
+	background: #86bbbd;
+	border: none;
+	padding: .6rem .9rem;
+	font-family: 'Dosis';
+	font-weight: bold;
+	border-radius: 8px;
+	color: darkslategray;
+}
+
+button:focus, input:focus{
+	outline:3px solid rgba(125,211,252,0.18);
+	outline-offset:2px;
+}
+
+.countdown{
+	font-weight: 600;
+	font-size: 1.1rem;
+	color: white;
+}
+
+footer{
+	color: #533747;
+	font-weight: bold;
+}
+
+.visually-hidden{
+	position: absolute!important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px,1px,1px,1px);
+	white-space: nowrap;
+}
+
+.sr-only{
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px,1px,1px,1px);
+	white-space: nowrap;
+}
+
+@media(min-width : 701px ){
+	#signup-form {
+		flex-wrap:nowrap;
+	}
+	#email{
+		min-width:320px;
+	}
+}
+
+/* Start https://www.cursors-4u.com */
+*{
+	cursor: url(https://cur.cursors-4u.net/symbols/sym-6/sym597.cur), auto !important;
+}
+/* End https://www.cursors-4u.com */
+
+.presentacion{
+	
+}
